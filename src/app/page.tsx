@@ -13,7 +13,7 @@ export default function Home() {
 
         <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-muted-foreground md:text-xl">
           Artificial Intelligence methods and tools for accessing, processing
-          and querying occupational health and safety knowledge.
+          and querying occupational  health and safety knowledge.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
