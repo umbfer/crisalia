@@ -34,6 +34,6 @@ export const siteConfig: SiteConfig = {
 
   socials: {
     github: "https://github.com/umbfer/crisalia",
-    linkedin: "https://www.linkedin.com/company/teralab-sapienza",
+    x: "",
   },
 };
