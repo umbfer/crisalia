@@ -6,8 +6,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-inter);
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -16,158 +19,470 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
+
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
   --color-chart-2: var(--chart-2);
   --color-chart-1: var(--chart-1);
+
   --color-ring: var(--ring);
-  --color-input: var(--input);  
+  --color-input: var(--input);
   --color-border: var(--border);
+
   --color-destructive: var(--destructive);
+
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
+
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
+
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
+
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
+
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-inter);
 }
+
+/* -------------------------------------------------------------------------- */
+/* CRISALIA PALETTE                                                           */
+/* -------------------------------------------------------------------------- */
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 0.9rem;
+
+  /*
+   * Core CRISALIA colours
+   *
+   * Petrol / teal:
+   *   main identity colour
+   *
+   * Green / cyan / orange:
+   *   derived from the CRISALIA logo
+   *
+   * Sapienza red:
+   *   used only as an institutional accent
+   */
+  --crisalia-petrol: #075b60;
+  --crisalia-petrol-dark: #034247;
+  --crisalia-teal: #0c8b91;
+  --crisalia-cyan: #1ca6c8;
+  --crisalia-green: #78b840;
+  --crisalia-lime: #a5c936;
+  --crisalia-yellow: #f4cb23;
+  --crisalia-orange: #f59a23;
+
+  --sapienza-red: #822433;
+  --sapienza-red-dark: #651a27;
+
+  /*
+   * Main theme
+   */
+  --background: #fbfdfc;
+  --foreground: #142628;
+
+  --card: #ffffff;
+  --card-foreground: #142628;
+
+  --popover: #ffffff;
+  --popover-foreground: #142628;
+
+  --primary: var(--crisalia-petrol);
+  --primary-foreground: #ffffff;
+
+  --secondary: #eef7f5;
+  --secondary-foreground: #123e41;
+
+  --muted: #f1f7f6;
+  --muted-foreground: #627577;
+
+  --accent: #e4f4f1;
+  --accent-foreground: var(--crisalia-petrol-dark);
+
+  --destructive: #c1373d;
+
+  --border: #d8e5e3;
+  --input: #d8e5e3;
+  --ring: var(--crisalia-teal);
+
+  /*
+   * Charts / indicators
+   */
+  --chart-1: var(--crisalia-petrol);
+  --chart-2: var(--crisalia-teal);
+  --chart-3: var(--crisalia-green);
+  --chart-4: var(--crisalia-yellow);
+  --chart-5: var(--crisalia-orange);
+
+  /*
+   * Sidebar
+   */
+  --sidebar: #f6faf9;
+  --sidebar-foreground: #142628;
+  --sidebar-primary: var(--crisalia-petrol);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e8f3f1;
+  --sidebar-accent-foreground: var(--crisalia-petrol-dark);
+  --sidebar-border: #d8e5e3;
+  --sidebar-ring: var(--crisalia-teal);
 }
 
+/* -------------------------------------------------------------------------- */
+/* DARK MODE                                                                  */
+/* -------------------------------------------------------------------------- */
+
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #0d1819;
+  --foreground: #edf5f4;
+
+  --card: #132426;
+  --card-foreground: #edf5f4;
+
+  --popover: #132426;
+  --popover-foreground: #edf5f4;
+
+  --primary: #50c0c1;
+  --primary-foreground: #062d31;
+
+  --secondary: #173032;
+  --secondary-foreground: #edf5f4;
+
+  --muted: #193033;
+  --muted-foreground: #a4b8b8;
+
+  --accent: #173c3d;
+  --accent-foreground: #dff5f1;
+
+  --destructive: #e35d63;
+
+  --border: rgb(255 255 255 / 10%);
+  --input: rgb(255 255 255 / 14%);
+  --ring: #50c0c1;
+
+  --chart-1: #50c0c1;
+  --chart-2: #7bc866;
+  --chart-3: #31abd1;
+  --chart-4: #f0ca38;
+  --chart-5: #f2a039;
+
+  --sidebar: #112123;
+  --sidebar-foreground: #edf5f4;
+  --sidebar-primary: #50c0c1;
+  --sidebar-primary-foreground: #062d31;
+  --sidebar-accent: #173032;
+  --sidebar-accent-foreground: #edf5f4;
+  --sidebar-border: rgb(255 255 255 / 10%);
+  --sidebar-ring: #50c0c1;
 }
+
+/* -------------------------------------------------------------------------- */
+/* BASE                                                                       */
+/* -------------------------------------------------------------------------- */
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
-    height: 100%;
+    min-height: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  a {
+    text-underline-offset: 4px;
   }
 }
+
+/* -------------------------------------------------------------------------- */
+/* CRISALIA-SPECIFIC UTILITIES                                                */
+/* -------------------------------------------------------------------------- */
+
+/*
+ * Main brand gradient.
+ * Use sparingly: lines, separators, small decorative elements.
+ */
+.crisalia-gradient {
+  background:
+    linear-gradient(
+      90deg,
+      var(--crisalia-green) 0%,
+      var(--crisalia-teal) 35%,
+      var(--crisalia-cyan) 65%,
+      var(--crisalia-yellow) 82%,
+      var(--crisalia-orange) 100%
+    );
+}
+
+/*
+ * Hero background:
+ * deliberately very subtle, so the website still feels academic.
+ */
+.crisalia-hero {
+  background:
+    radial-gradient(
+      circle at 20% 15%,
+      rgb(120 184 64 / 10%),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 82% 20%,
+      rgb(28 166 200 / 10%),
+      transparent 32%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fbfdfc 65%,
+      #f5faf8 100%
+    );
+}
+
+.dark .crisalia-hero {
+  background:
+    radial-gradient(
+      circle at 20% 15%,
+      rgb(120 184 64 / 8%),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 82% 20%,
+      rgb(28 166 200 / 10%),
+      transparent 32%
+    ),
+    linear-gradient(
+      180deg,
+      #0d1819 0%,
+      #101f20 100%
+    );
+}
+
+/*
+ * Institutional Sapienza accent.
+ * Intended for small separators / labels, not entire sections.
+ */
+.sapienza-accent {
+  color: var(--sapienza-red);
+}
+
+.sapienza-border {
+  border-color: var(--sapienza-red);
+}
+
+.sapienza-rule {
+  height: 3px;
+  width: 72px;
+  border-radius: 999px;
+  background: var(--sapienza-red);
+}
+
+/*
+ * CRISALIA section surface.
+ */
+.crisalia-surface {
+  background:
+    linear-gradient(
+      180deg,
+      rgb(238 247 245 / 75%) 0%,
+      rgb(251 253 252 / 100%) 100%
+    );
+}
+
+.dark .crisalia-surface {
+  background:
+    linear-gradient(
+      180deg,
+      rgb(23 48 50 / 80%) 0%,
+      rgb(13 24 25 / 100%) 100%
+    );
+}
+
+/*
+ * Academic / institutional label.
+ */
+.institution-label {
+  color: var(--sapienza-red);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/*
+ * CRISALIA section label.
+ */
+.crisalia-label {
+  color: var(--crisalia-petrol);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.dark .crisalia-label {
+  color: #70cccc;
+}
+
+/*
+ * Cards that feel less like generic SaaS components.
+ */
+.crisalia-card {
+  background: rgb(255 255 255 / 82%);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow:
+    0 1px 2px rgb(4 66 71 / 3%),
+    0 8px 30px rgb(4 66 71 / 4%);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.crisalia-card:hover {
+  transform: translateY(-2px);
+  border-color: rgb(12 139 145 / 35%);
+  box-shadow:
+    0 2px 4px rgb(4 66 71 / 4%),
+    0 12px 34px rgb(4 66 71 / 8%);
+}
+
+.dark .crisalia-card {
+  background: rgb(19 36 38 / 82%);
+}
+
+/*
+ * Primary branded button.
+ */
+.crisalia-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  background: var(--crisalia-petrol);
+  color: white;
+  font-weight: 600;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.crisalia-button:hover {
+  background: var(--crisalia-petrol-dark);
+  transform: translateY(-1px);
+}
+
+/*
+ * Secondary branded button.
+ */
+.crisalia-button-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(7 91 96 / 24%);
+  border-radius: 0.7rem;
+  background: rgb(255 255 255 / 60%);
+  color: var(--crisalia-petrol);
+  font-weight: 600;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.crisalia-button-outline:hover {
+  background: #eff8f6;
+  border-color: rgb(7 91 96 / 42%);
+}
+
+.dark .crisalia-button-outline {
+  background: rgb(255 255 255 / 4%);
+  color: #70cccc;
+}
+
+/* -------------------------------------------------------------------------- */
+/* STEP UTILITY                                                               */
+/* -------------------------------------------------------------------------- */
 
 @utility step {
   counter-increment: step;
 
   &:before {
-    @apply absolute size-6 bg-foreground text-background rounded-full font-mono font-medium text-center text-base inline-flex items-center justify-center -indent-px;
-    @apply ml-[-45px] mt-[2px];
+    @apply absolute size-6 rounded-full bg-foreground text-center font-mono text-base font-medium text-background;
+    @apply ml-[-45px] mt-[2px] inline-flex items-center justify-center -indent-px;
     content: counter(step);
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* SELECTION                                                                  */
+/* -------------------------------------------------------------------------- */
 
 ::-moz-selection {
-  color: var(--background);
-  background: var(--foreground);
+  color: #ffffff;
+  background: var(--crisalia-petrol);
 }
 
 ::selection {
-  color: var(--background);
-  background: var(--foreground);
+  color: #ffffff;
+  background: var(--crisalia-petrol);
 }
 
-/* tailwind styles */
+/* -------------------------------------------------------------------------- */
+/* TYPOGRAPHY                                                                 */
+/* -------------------------------------------------------------------------- */
+
 .head-text-lg {
-  @apply text-3xl md:text-5xl lg:text-6xl font-bold font-heading tracking-tight leading-[1.5];
+  @apply font-heading text-3xl font-bold leading-[1.2] tracking-tight md:text-5xl lg:text-6xl;
 }
 
 .head-text-md {
-  @apply text-2xl md:text-4xl lg:text-5xl font-bold font-heading tracking-tight leading-[1.5];
+  @apply font-heading text-2xl font-bold leading-[1.25] tracking-tight md:text-4xl lg:text-5xl;
 }
 
 .head-text-sm {
-  @apply text-lg md:text-xl lg:text-2xl font-bold font-heading tracking-tight leading-[1.5];
+  @apply font-heading text-lg font-bold leading-[1.35] tracking-tight md:text-xl lg:text-2xl;
 }
+
+/* -------------------------------------------------------------------------- */
+/* MDX HEADING ANIMATION                                                      */
+/* -------------------------------------------------------------------------- */
 
 .mdx-heading {
   --duration: 0.8s;
   --delay: 0.1s;
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
+
   display: inline-block;
-  background: linear-gradient(hsl(var(--secondary-foreground)) 0 0)
+
+  background:
+    linear-gradient(var(--crisalia-petrol) 0 0)
     calc(100% - var(--p, 0%)) / 0 var(--p, 0%) no-repeat;
-  transition: 
+
+  transition:
     background-size var(--duration) var(--ease),
     color var(--duration) var(--ease),
     transform var(--duration) var(--ease);
@@ -180,40 +495,61 @@
 @keyframes sweepAnimation {
   0% {
     --p: 0%;
-    color: hsl(var(--secondary-foreground));
+    color: var(--foreground);
     background-size: 0 var(--p, 0%);
   }
+
   50% {
     --p: 100%;
-    color: hsl(var(--secondary));
+    color: #ffffff;
     background-size: 100% var(--p, 0%);
   }
+
   100% {
     --p: 200%;
-    color: hsl(var(--secondary-foreground));
+    color: var(--foreground);
     background-size: 210% var(--p, 0%);
   }
 }
 
 .sweep-hover-animation {
-  @apply text-muted dark:text-muted-foreground;
+  @apply text-muted-foreground;
+
+  background:
+    linear-gradient(var(--crisalia-petrol) 0 0)
+    var(--p, 0) / var(--p, 0) no-repeat;
+
+  transition:
+    0.4s,
+    background-position 0s;
 }
 
-.sweep-hover-animation {
-  background: linear-gradient(hsl(var(--secondary-foreground)) 0 0) var(--p, 0) /
-    var(--p, 0) no-repeat;
-  transition: 0.4s, background-position 0s;
-}
 .sweep-hover-animation:hover {
   --p: 100%;
-  color: hsl(var(--secondary));
+  color: #ffffff;
 }
+
+/* -------------------------------------------------------------------------- */
+/* SCROLLBAR                                                                  */
+/* -------------------------------------------------------------------------- */
 
 *::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.3rem;
 }
 
-/* view transition */
+*::-webkit-scrollbar-thumb {
+  background: rgb(7 91 96 / 28%);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* -------------------------------------------------------------------------- */
+/* VIEW TRANSITION                                                            */
+/* -------------------------------------------------------------------------- */
+
 ::view-transition-group(root) {
   animation-duration: 0.7s;
   animation-timing-function: var(--expo-out);
@@ -228,6 +564,7 @@
   animation: none;
   z-index: -1;
 }
+
 .dark::view-transition-new(root) {
   animation-name: reveal-dark;
 }
@@ -236,6 +573,7 @@
   from {
     clip-path: polygon(50% -71%, -50% 71%, -50% 71%, 50% -71%);
   }
+
   to {
     clip-path: polygon(50% -71%, -50% 71%, 50% 171%, 171% 50%);
   }
@@ -245,12 +583,15 @@
   from {
     clip-path: polygon(171% 50%, 50% 171%, 50% 171%, 171% 50%);
   }
+
   to {
     clip-path: polygon(171% 50%, 50% 171%, -50% 71%, 50% -71%);
   }
 }
 
-/* code block */
+/* -------------------------------------------------------------------------- */
+/* CODE BLOCKS                                                                */
+/* -------------------------------------------------------------------------- */
 
 html.light[data-theme="dark"] {
   display: none;
@@ -261,11 +602,11 @@ html.dark[data-theme="light"] {
 }
 
 [data-rehype-pretty-code-figure] {
-  @apply bg-zinc-900 rounded-md my-3;
+  @apply my-3 rounded-md bg-zinc-900;
 }
 
 [data-rehype-pretty-code-figure] code {
-  @apply grid min-w-full break-words border-none bg-transparent pl-3 text-sm rounded-md;
+  @apply grid min-w-full break-words rounded-md border-none bg-transparent pl-3 text-sm;
   counter-reset: line;
   box-decoration-break: clone;
 }
@@ -278,7 +619,9 @@ html.dark[data-theme="light"] {
   counter-reset: line;
 }
 
-[data-rehype-pretty-code-figure] code[data-line-numbers] > [data-line]::before {
+[data-rehype-pretty-code-figure]
+  code[data-line-numbers]
+  > [data-line]::before {
   counter-increment: line;
   content: counter(line);
   @apply mr-4 inline-block w-4 text-right text-gray-500;
@@ -301,7 +644,7 @@ html.dark[data-theme="light"] {
 }
 
 [data-rehype-pretty-code-title] {
-  @apply text-sm text-zinc-300 px-3 py-2;
+  @apply px-3 py-2 text-sm text-zinc-300;
 }
 
 [data-rehype-pretty-code-title] + pre {
@@ -313,5 +656,5 @@ html.dark[data-theme="light"] {
 }
 
 .steps > h3 {
-  @apply mt-8 mb-4 text-base font-semibold;
+  @apply mb-4 mt-8 text-base font-semibold;
 }
