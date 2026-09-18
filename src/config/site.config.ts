@@ -1,29 +1,39 @@
 import { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  name: "MDX Template",
-  title: "Modern MDX Template with Next.js 15",
-  description: "A sleek and modern template for building documentation and blogs with Next.js 15, MDX, Velite, Tailwind CSS V4, and Shadcn UI components",
-  origin: "https://mdx4.rdsx.dev",
+  name: "CRISALIA",
+  title: "CRISALIA | AI for Occupational Health and Safety",
+  description:
+    "CRISALIA is a research project developing Artificial Intelligence methods and tools for accessing, processing and querying occupational health and safety documentation, hosted by TeraLab at Sapienza University of Rome.",
+
+  origin: "https://crisalia.teralab.ai",
+
   keywords: [
-    "Next.js 15",
-    "MDX",
-    "Velite",
-    "Shadcn UI",
-    "Documentation",
-    "Blog",
-    "TypeScript",
-    "Tailwind CSS",
-    "Tailwind CSS V4",
-    "Content Management"
+    "CRISALIA",
+    "TeraLab",
+    "Sapienza University of Rome",
+    "Artificial Intelligence",
+    "Occupational Health and Safety",
+    "Workplace Safety",
+    "Large Language Models",
+    "LLM",
+    "Retrieval-Augmented Generation",
+    "RAG",
+    "Knowledge Graphs",
+    "Natural Language Processing",
+    "NLP",
+    "INAIL",
   ],
-  og: "https://mdx4.rdsx.dev/og.png",
+
+  og: "https://crisalia.teralab.ai/og.png",
+
   creator: {
-    name: "rds_agi",
-    url: "https://rdsx.dev",
+    name: "TeraLab - Sapienza University of Rome",
+    url: "https://www.teralab.ai",
   },
+
   socials: {
-    github: "https://github.com/rudrodip/mdx4",
-    x: "https://x.com/rds_agi",
-  }
-}
+    github: "https://github.com/umbfer/crisalia",
+    linkedin: "https://www.linkedin.com/company/teralab-sapienza",
+  },
+};
