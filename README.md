@@ -2,7 +2,7 @@
 
 A modern documentation and blog template built with Next.js 15, MDX, Velite, Tailwind CSS V4 and Shadcn UI components. This template provides a robust foundation for creating beautiful documentation sites and blogs with a focus on developer experience and performance.
 
-## Features
+## Features 
 
 - **Next.js 15** - Built on the latest version of React framework for production
 - **MDX Support** - Write content using Markdown with embedded React components
