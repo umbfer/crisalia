@@ -14,7 +14,7 @@ A modern documentation and blog template built with Next.js 15, MDX, Velite, Tai
 
 ## Quick Start
 
-1. Clone the repository:
+1. Clone the repository: 
 
 ```bash
 git clone https://github.com/rudrodip/mdx4.git my-docs
