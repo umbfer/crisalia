@@ -4,7 +4,7 @@ A modern documentation and blog template built with Next.js 15, MDX, Velite, Tai
 
 ## Features 
 
-- **Next.js 15** - Built on the latest version of React framework for production
+- **Next.js 15** - Built on the latest version of React framework for production 
 - **MDX Support** - Write content using Markdown with embedded React components
 - **Content Management** - Efficient content organization and processing with Velite
 - **Modern UI Components** - Pre-built components from Shadcn UI
